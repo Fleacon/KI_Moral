@@ -494,7 +494,7 @@ nav.scrolled {
   transform: translateY(0);
 }
 
-/* ── CONNECTING LINE DECO ── */
+/* ── DECO ── */
 .deco-line {
   position: absolute;
   right: 10vw;
@@ -505,6 +505,23 @@ nav.scrolled {
   opacity: 0.4;
 }
 
+/* ── SOURCES GRID ── */
+.sources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+@media (max-width: 768px) {
+  .sources-grid {
+    grid-template-columns: 1fr;
+  }
+  .sources-grid > div {
+    padding: 28px !important;
+  }
+}
+
+/* ── MOBILE ── */
 @media (max-width: 640px) {
   nav .nav-links {
     display: none;
